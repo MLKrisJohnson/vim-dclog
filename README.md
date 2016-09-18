@@ -3,7 +3,7 @@ vim-dclog
 
 Vim syntax highlighting plugin for deviceConnect log files.
 
-![vim-dclog Syntax Highlighting Screenshot](https://raw.githubusercontent.com/mobile-labs/vim-dclog/master/dclog.png)
+![vim-dclog Syntax Highlighting Screenshot](https://raw.githubusercontent.com/MLKrisJohnson/vim-dclog/master/dclog.png)
 
 When installed, this [vim](http://www.vim.org) plugin defines a new filetype named "dclog", and syntax highlighting scheme for it.
 
@@ -15,7 +15,7 @@ Any filename matching the pattern `MobileLabs.*.log` will automatically be opene
 
 #### [Vim-Plug](https://github.com/junegunn/vim-plug)
 
-1. Add `Plug 'mobile-labs/vim-dclog'` to your vimrc file.
+1. Add `Plug 'MLKrisJohnson/vim-dclog'` to your vimrc file.
 2. Reload your vimrc or restart
 3. Run `:PlugInstall`
 
@@ -23,7 +23,7 @@ Any filename matching the pattern `MobileLabs.*.log` will automatically be opene
 
 ```sh
 cd ~/.vim/bundle
-git clone https://github.com/mobile-labs/vim-dclog.git
+git clone https://github.com/MLKrisJohnson/vim-dclog.git
 ```
 
 ### Manual Installation
