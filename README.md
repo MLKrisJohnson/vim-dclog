@@ -34,5 +34,5 @@ Download the files. Put the `ftdetect/dclog.vim` file into your `~/.vim/ftdetect
 
 #### Windows
 
-Download the files. Put the `ftdetect/dclog.vim` file into your `~\vimfiles\ftdetect` directory and the `syntax/dclog.vim` file into your `~/vimfiles\syntax` directory, creating those directories if necessary.
+Download the files. Put the `ftdetect/dclog.vim` file into your `~\vimfiles\ftdetect` directory and the `syntax/dclog.vim` file into your `~\vimfiles\syntax` directory, creating those directories if necessary.
 
