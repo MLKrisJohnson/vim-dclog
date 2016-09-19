@@ -33,17 +33,23 @@ syn match   dclogWhere       contained display '[A-Z]\S*\s*'
 
 
 syn match   dclogText        contained display '.*'
-                             \ contains=dclogGUID,dclogIP,dclogURL,dclogError,dclogNumber
+                             \ contains=dclogGUID,dclogIP,dclogURL,dclogError,dclogNumber,dclogNull,dclogEnter,dclogEnd
 
 syn match   dclogNumber      contained '0x[0-9a-fA-F]*\|\[<[0-9a-f]\+>\]\|\<\d[0-9a-fA-F]*'
 
-syn match   dclogGUID        contained '\x\x\x\x\x\x\x\x-\x\x\x\x-\x\x\x\x-\x\x\x\x-\x\x\x\x\x\x\x\x\x\x\x\x'
+syn match   dclogNull        'null'
+
+syn match   dclogGUID        contained '\v\x{8}-\x{4}-\x{4}-\x{4}-\x{12}'
 
 syn match   dclogError       contained '\c.*\<\(FATAL\|ERROR\|ERRORS\|FAILED\|FAILURE\|Exception\).*'
 
 syn match   dclogIP          '\d\+\.\d\+\.\d\+\.\d\+'
 
 syn match   dclogURL         '\w\+://\S\+'
+
+syn match   dclogEnter       '(Enter)'
+
+syn match   dclogEnd         '(End)'
 
 syn match   dclogException   contained display '\S*\Exception: *\| *at \S*'
 
@@ -52,11 +58,14 @@ hi def link dclogDate        Constant
 hi def link dclogTime        Type
 hi def link dclogConnection  Statement
 hi def link dclogWhere       Identifier
+hi def link dclogEnter       Identifier
+hi def link dclogEnd         Identifier
 hi def link dclogOldPID      Constant
 hi def link dclogError       ErrorMsg
 hi def link dclogException   Exception
 hi def link dclogIP          Constant
 hi def link dclogGUID        Constant
+hi def link dclogNull        Constant
 hi def link dclogURL         Underlined
 hi def link dclogText        Normal
 hi def link dclogNumber      Number
